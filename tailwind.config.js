@@ -2,7 +2,14 @@
 module.exports = {
   content: ["./docs/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontSize: {
+        'xxs': '0.625rem'
+      },
+      fontWeight : { 
+        'mediumlight' : '270'
+      },
+    },
   },
   plugins: [],
 }
