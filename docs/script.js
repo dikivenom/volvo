@@ -1,28 +1,28 @@
 const allTabs = document.querySelectorAll('.tab');
 
-allTabs.forEach(tab => {
-tab.addEventListener('click', e => {
-  e.preventDefault();
+allTabs.forEach(tabs => {
 
-  const carElement = tab.closest('.grid');
-  const pricingContent = carElement.querySelector('.pricingContent');
-  const infoContent = carElement.querySelector('.infoContent');
+  tabs.addEventListener('click', e => {
+    e.preventDefault();
+    const carElements = tabs.closest('.grid');
+    const pricingContent = carElements.querySelector('.pricingContent');
+    const infoContent = carElements.querySelector('.infoContent');
+    
+    const tabPricing = carElements.querySelector('.pricingTab');
+    const tabInfo = carElements.querySelector('.infoTab');
   
-  const tabPricing = carElement.querySelector('.pricingTab');
-  const tabInfo = carElement.querySelector('.infoTab');
-
-  if(tab === tabPricing){
-    pricingContent.classList.remove('hidden');
-    infoContent.classList.add('hidden');
-    tabPricing.classList.add('border-b-2','border-[#001B72]');
-    tabInfo.classList.remove('border-b-2','border-[#001B72]');
-  } else if (tab === tabInfo){
-    pricingContent.classList.add('hidden');
-    infoContent.classList.remove('hidden');
-    tabPricing.classList.remove('border-b-2','border-[#001B72]');
-    tabInfo.classList.add('border-b-2','border-[#001B72]');
-  }
-
-})
-
-})
+    if (tabs === tabPricing){
+      tabPricing.classList.add('border-b-2', 'border-[#001B72]');
+      pricingContent.classList.remove('hidden');
+      tabInfo.classList.remove('border-b-2', 'border-[#001B72]');
+      infoContent.classList.add('hidden');
+    } else if (tabs === tabInfo){
+      tabInfo.classList.add('border-b-2', 'border-[#001B72]');
+      infoContent.classList.remove('hidden');
+      tabPricing.classList.remove('border-b-2', 'border-[#001B72]');
+      pricingContent.classList.add('hidden');
+    }
+  
+  })
+  })
+ 
