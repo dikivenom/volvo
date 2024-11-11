@@ -924,10 +924,6 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.pt-1 {
-  padding-top: 0.25rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -1015,8 +1011,16 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
   .md\:mt-0 {
     margin-top: 0px;
+  }
+
+  .md\:mt-2 {
+    margin-top: 0.5rem;
   }
 
   .md\:block {
@@ -1039,12 +1043,16 @@ video {
     height: 620px;
   }
 
-  .md\:w-auto {
-    width: auto;
-  }
-
   .md\:w-24 {
     width: 6rem;
+  }
+
+  .md\:w-96 {
+    width: 24rem;
+  }
+
+  .md\:w-auto {
+    width: auto;
   }
 
   .md\:grid-cols-2 {
@@ -1053,10 +1061,6 @@ video {
 
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:gap-5 {
-    gap: 1.25rem;
   }
 
   .md\:gap-y-5 {
@@ -1073,6 +1077,11 @@ video {
     border-width: 0px;
   }
 
+  .md\:border-\[\#001B72\] {
+    --tw-border-opacity: 1;
+    border-color: rgb(0 27 114 / var(--tw-border-opacity));
+  }
+
   .md\:bg-transparent {
     background-color: transparent;
   }
@@ -1086,6 +1095,18 @@ video {
     padding: 0px;
   }
 
+  .md\:p-1 {
+    padding: 0.25rem;
+  }
+
+  .md\:pb-2 {
+    padding-bottom: 0.5rem;
+  }
+
+  .md\:pt-1 {
+    padding-top: 0.25rem;
+  }
+
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1096,6 +1117,21 @@ video {
     line-height: 1.5rem;
   }
 
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
   .md\:font-bold {
     font-weight: 700;
   }
@@ -1103,6 +1139,24 @@ video {
   .md\:text-blue-900 {
     --tw-text-opacity: 1;
     color: rgb(30 58 138 / var(--tw-text-opacity));
+  }
+
+  .md\:text-black {
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity));
+  }
+
+  .md\:hover\:border-b-2:hover {
+    border-bottom-width: 2px;
+  }
+
+  .md\:hover\:border-b-4:hover {
+    border-bottom-width: 4px;
+  }
+
+  .md\:hover\:border-\[\#001B72\]:hover {
+    --tw-border-opacity: 1;
+    border-color: rgb(0 27 114 / var(--tw-border-opacity));
   }
 
   .md\:hover\:bg-transparent:hover {
